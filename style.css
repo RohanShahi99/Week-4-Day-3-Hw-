@@ -1,0 +1,153 @@
+/* Header Section */
+header {
+    background: url('Photo/central_park.jpg') center top no-repeat;
+    background-size: 1500px;
+    height: 600px;
+    padding-top: 100px;
+    padding-left: 100px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: rgb(255, 245, 238);
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+nav ul li a:visited {
+    color: #818db3;
+}
+
+nav ul li a:hover {
+    color: #333;
+}
+
+nav ul li a:active {
+    color: #753a30;
+}
+
+/* Main Section */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 20px;
+    text-align: left;
+}
+
+main h1 {
+    color: rgb(129, 141, 179);
+    font-family: Arial, sans-serif;
+    margin-bottom: 10px;
+}
+
+main p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+/* Table Styling */
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 16px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: rgb(240, 240, 240);
+    padding: 10px;
+}
+
+td {
+    padding: 8px;
+}
+
+main #album {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 15px; /* Spacing between grid items */
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    list-style-type: none;
+    padding: 0;
+}
+
+main #album li {
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+main #album img {
+    width: 100%; 
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+.photo-grid .desc{
+    text-align: center;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-weight:bold;
+    margin-top: 5px;
+}
+#infoBox{
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background:rgb(20, 16, 16);
+    padding:20px;
+    border: 2px solid black;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    width: 300px;
+    text-align: center;
+    display: none;
+    color: white;
+}
+#infoText{
+    color:white;
+}
+#closeInfo{
+    display: block;
+    margin-top: 10px;   
+    color:white;
+}
+/* Footer */
+footer {
+    height: 40px;
+    background-color: rgb(129, 141, 179);
+    text-align: center;
+    line-height: 40px;
+    color: rgb(211, 218, 240);
+    font-size: 14px;
+}
